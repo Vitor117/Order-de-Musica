@@ -1,0 +1,144 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Red Hat Display", sans-serif;
+}
+body {
+    
+    
+    height: 100vh;
+  }
+
+body {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    background-color: hsl(225, 100%, 94%);
+    background-image: url(../imagem/pattern-background-desktop.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+main {
+   max-width: 416px;
+   background-color: #fff;
+   border-radius: 1rem;
+}
+
+main section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 2rem;
+    height: 100%;
+    width: 100%;
+    box-shadow: 0 5px 5px 0 rgba(56, 42, 225, 0.2);
+    border-radius: 0 0 1rem 1rem;
+}
+
+main section h1 {
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    color: hsl(223, 47%, 23%);
+    font-weight: 900;
+}
+main section span {
+    color: hsl(224, 23%, 55%);
+    text-align: center;
+}
+
+main img {
+    width: 100%;
+    border-radius: 1rem 1rem 0 0;
+}
+
+main div.info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    background-color: hsl(225, 100%, 98%);
+    border-radius: 0.8rem;
+    padding: 1.5rem 1rem;
+    margin: 2rem 0;
+}
+
+main .info .muisic {
+    display: flex;
+    align-items: center;
+}
+
+main .info .preco {
+    display: flex;
+    flex-direction: column;
+}
+
+main .info img {
+    width: 50px;
+    margin-right: 1rem;
+}
+
+main .info a {
+    color: hsl(245, 75%, 52%);
+    font-weight: 600;
+    font-size: 90%;
+    transition: all 0.3s;
+}
+
+main .info a:hover {
+    color: hsl(224, 23%, 55%);
+    font-weight: 600;
+    font-size: 90%;
+    text-decoration: none;
+}
+
+main button {
+    background-color: hsl(245, 75%, 52%);
+    color: hsl(225, 100%, 98%);
+    cursor: pointer;
+    font-weight: 700;
+    border: none;
+    width: 100%;
+    padding: 1rem 0;
+    border-radius: 0.8rem;
+    margin-bottom: 1.5rem;
+    box-shadow: 0px 20px 20px rgba(56, 42, 225, 0.2);
+    transition: background 0.3s;
+}
+
+main button:hover {
+    background-color: #766cf1;
+   
+}
+
+main .cancel {
+    text-decoration: none;
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: hsl(224, 23%, 55%);
+    margin-bottom: 2rem;
+    transition: all 0.3s;
+}
+
+main .cancel:hover {
+   color: hsl(223, 47%, 23%);
+}
+
+@media screen and (max-width: 650px) {
+    body {
+      background: url('../imagem/pattern-background-mobile.svg');
+      background-size: 100%;
+      background-repeat: no-repeat;
+    }
+  }
+  
+  @media screen and (max-width: 980px) {
+    section {
+      padding: 0 3rem;
+    }
+  }
